@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSA4264: Sense-making Case Analysis</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes gradientFlow {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        .problem-pic {
+            width: auto;
+            margin: auto;
+            height: 350px;
+            margin-bottom: 15px;
+        }
+        .animated-gradient {
+            background: linear-gradient(
+                135deg,
+                #1e40af,  /* cobalt */
+                #059669,  /* emerald */
+                #dc2626
+            );
+            background-size: 300% 300%;
+            animation: gradientFlow 20s ease infinite;
+        }
+        .hover-animate {
+            transition: all 0.5s ease;
+        }
+        .box-fit {
+            height: fit-content;
+        }
+        .hover-animate:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero Section -->
+    <header class="animated-gradient text-white">
+        <div class="container mx-auto px-6 py-16">
+            <h1 class="text-4xl md:text-5xl leading-tight font-bold mb-0">DSA4264</h1>
+            <h2 class="text-2xl md:text-3xl mb-8">Sense-making Case Analysis: Public Policy and Society</h2>
+            <p class="text-2xl font-bold opacity-90">Shaun Khoo</p>
+            <p class="text-xl opacity-90">Adjunct Lecturer, National University of Singapore</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- Course Overview -->
+        <section class="mb-16">
+            <h3 class="text-2xl font-bold mb-6 text-gray-800">Course Description</h3>
+            <p>Interested in applying your data science skills for the public good? In this course, we will examine how data science and machine learning can be used to inform government policymaking and enhance service delivery. We start with an overview of Singapore's public sector and the range of policy issues Singapore grapples with, before focusing on specific case studies to understand how data science works in practice. You will also have the chance to sharpen your skills in data visualisation, technical communication, and other data science skills. The course culminates in a group project focused on applying data science to specific public sector use cases, ranging from geospatial data analysis to natural language processing. Join us on an exciting journey of learning how to use data science for the public good!</p>
+            <br/>
+            <p><i>Note: This course was taught in AY2024/25 Semester 1 at NUS and has now been completed.</i></p>
+        </section>
+
+        <!-- Problem 1-->
+        <section class="mb-16">
+            <h3 class="text-2xl font-bold mb-6 text-gray-800">Group Project: Problem 1 (Geospatial Data)</h3>
+            <div class="grid md:grid-cols-5 gap-6">
+                <div class="md:col-span-2 bg-white p-6 rounded-lg shadow-md hover-animate box-fit">
+                    <h4 class="text-xl font-semibold mb-4 text-indigo-600">Shortlisting bus routes for rerouting</h4>
+                    <img src="problem-1.png" class="problem-pic">
+                    You are a team of data scientists in MOT, focusing specifically on public transportation policies and implementation. You have been tasked to do a comprehensive analysis of all bus routes that are parallel to MRT lines - specifically you need to assess which bus services are worth reviewing for potential service changes.
+                </div>
+
+                <div class="md:col-span-3 grid md:grid-cols-2 gap-6 grid-rows-none">
+
+                    <div class="bg-gradient-to-br from-blue-50 to--50 p-6 rounded-lg border hover-animate">
+                        <h4 class="text-lg font-semibold mb-3">Comprehensive Analysis of Parallel Bus Routes to MRT Lines for Service Optimisations <a href="https://github.com/Yutingggggggg/dsa4264_geospatial" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:baseline" width="18" height="18" viewBox="0 0 24 24" fill="black"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/><path/></svg></a></h4>
+                        <p class="text-gray-600">Choo Jin Yi, Lian Ko-Shyan, Jiya Dutta, Kang Yuting, Toh Kai Lin</p>
+                    </div>
+    
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg border hover-animate">
+                        <h4 class="text-lg font-semibold mb-3">Geospatial Analysis of Bus Services against Train Lines <a href="https://github.com/Elizaongwz/DSA4264" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:baseline" width="18" height="18" viewBox="0 0 24 24" fill="black"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/><path/></svg></a></h4>
+                        <p class="text-gray-600">Krystal Low, Lily Rozana Joehann Aung, Eliza Ong, Wong Fang Ting</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg border hover-animate">
+                        <h4 class="text-lg font-semibold mb-3">Parallel Bus Routes to MRT Lines <a href="https://github.com/looyinggene/DSA4264" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:baseline" width="18" height="18" viewBox="0 0 24 24" fill="black"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/><path/></svg></a></h4>
+                        <p class="text-gray-600">Loo Ying Gene, Aiko Liana Amran, Alicia Ong Ching Ern, Ramasamy Shreya</p>
+                    </div>
+    
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg border hover-animate">
+                        <h4 class="text-lg font-semibold mb-3">Bus Route Analysis <a href="https://github.com/ajjajjajjajj/dsa4264-lta-geospatial.git" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:baseline" width="18" height="18" viewBox="0 0 24 24" fill="black"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/><path/></svg></a></h4>
+                        <p class="text-gray-600">Anthea Ang Qiao En, Ng Yee Gee Kiley, A.Guhanavel s/o Ashok Kumar, Ang Jing Jie</p>
+                    </div>
+    
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg border hover-animate">
+                        <h4 class="text-lg font-semibold mb-3">Optimising Public Transport in Singapore <a href="https://github.com/tanxuanle/DSA4264_GEOSPATIAL" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:baseline" width="18" height="18" viewBox="0 0 24 24" fill="black"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/><path/></svg></a></h4>
+                        <p class="text-gray-600">Tan Xuan Le, Kaitlyn Lai Lin Cheng, Liew Xin Yu, Gayathri d/o Ganesan</p>
+                    </div>
+    
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg border hover-animate">
+                        <h4 class="text-lg font-semibold mb-3">Bus Routes and Connectivity <a href="https://github.com/DSA4264/project" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:baseline" width="18" height="18" viewBox="0 0 24 24" fill="black"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/><path/></svg></a></h4>
+                        <p class="text-gray-600">Lim Choon Hao, Young Zhan Heng, Chow Xin Tian, Brandon Neo</p>
+                    </div>
+    
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-6 rounded-lg border hover-animate">
+                        <h4 class="text-lg font-semibold mb-3">Removing Redundant Bus Services <a href="https://github.com/brandono7/DSA4264_Geospatial" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:baseline" width="18" height="18" viewBox="0 0 24 24" fill="black"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/><path/></svg></a></h4>
+                        <p class="text-gray-600">Brandon Ong Cae Jun, Wong Li Xuan, Kwek Wan Ting, Xue Beichen, Joshua Koh</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Problem 2-->
+        <section class="mb-16">
+            <h3 class="text-2xl font-bold mb-6 text-gray-800">Group Project: Problem 2 (Text Data)</h3>
+            <div class="grid md:grid-cols-5 gap-6">
+                <div class="md:col-span-2 bg-white p-6 rounded-lg shadow-md hover-animate box-fit">
+                    <h4 class="text-xl font-semibold mb-4 text-red-700">Analysing toxicity in online discourse</h4>
+                    <img src="problem-2.png" class="problem-pic">
+                    You are a team of data scientists at MDDI, focusing specifically on online trust and safety. You have an internal dataset of Reddit comments on Singapore-related subreddits. You have been tasked to do a comprehensive analysis of Reddit data to assess whether and why the topics and comments have become more hateful and toxic over the past few years.
+                </div>
+
+                <div class="md:col-span-3 grid md:grid-cols-2 gap-6 grid-rows-none">
+
+                    <div class="bg-gradient-to-br from-red-50 to-rose-50 p-6 rounded-lg border hover-animate">
+                        <h4 class="text-lg font-semibold mb-3">Reddit Hate/Toxicity Analysis <a href="https://github.com/CabooseExia/DSA4264-Problem-2" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:baseline" width="18" height="18" viewBox="0 0 24 24" fill="black"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/><path/></svg></a></h4>
+                        <p class="text-gray-600">Wee Wei Kit Glenn, Bae Soo Youn, Muhammad Irfan B Salleh, Ethan Low Zhi Kai, Wong Si Yuan</p>
+                    </div>
+    
+                    <div class="bg-gradient-to-br from-red-50 to-rose-50 p-6 rounded-lg border hover-animate">
+                        <h4 class="text-lg font-semibold mb-3">Online Safety in Social Media <a href="https://github.com/shaeanneeu/toxic-comment-analysis" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:baseline" width="18" height="18" viewBox="0 0 24 24" fill="black"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/><path/></svg></a></h4>
+                        <p class="text-gray-600">Wang Tingyu Kelly, Duangporn Sirikulwattananon, Jessica Widyawati, Eu Shae-Anne, Tiffany Irene Prasetio</p>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-red-50 to-rose-50 p-6 rounded-lg border hover-animate">
+                        <h4 class="text-lg font-semibold mb-3">LionGuard Pro Max <a href="https://github.com/joytsy/DSA4264-Detoxify" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:baseline" width="18" height="18" viewBox="0 0 24 24" fill="black"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/><path/></svg></a></h4>
+                        <p class="text-gray-600">Joy Tan Syin Yee, Sarah Goh Sian Li, Koh Yi Jing, Richmond Sin, Kylie Tan</p>
+                    </div>
+    
+                    <div class="bg-gradient-to-br from-red-50 to-rose-50 p-6 rounded-lg border hover-animate">
+                        <h4 class="text-lg font-semibold mb-3">Analyzing Singapore Reddit Comments <a href="https://github.com/eileenlimjx/DSA4264-Project" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:baseline" width="18" height="18" viewBox="0 0 24 24" fill="black"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/><path/></svg></a></h4>
+                        <p class="text-gray-600">Tan Sze Jing, Eileen Lim, Lynn Keok, Hiong Wu Yep</p>
+                    </div>
+    
+                    <div class="bg-gradient-to-br from-red-50 to-rose-50 p-6 rounded-lg border hover-animate">
+                        <h4 class="text-lg font-semibold mb-3">Singapore Subreddits Toxicity Analysis <a href="https://github.com/yangshutingg/dsa4264" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:baseline" width="18" height="18" viewBox="0 0 24 24" fill="black"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/><path/></svg></a></h4>
+                        <p class="text-gray-600">Yang Shu Ting, Cao Han, Su Xuanxuan, Bernice Ong Hwee Wee, Luo Xinming</p>
+                    </div>
+    
+                    <div class="bg-gradient-to-br from-red-50 to-rose-50 p-6 rounded-lg border hover-animate">
+                        <h4 class="text-lg font-semibold mb-3">Toxicity of Reddit Comments in Singapore <a href="https://github.com/stacychann/DSA4264-reddit-toxicity-project" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:baseline" width="18" height="18" viewBox="0 0 24 24" fill="black"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/><path/></svg></a></h4>
+                        <p class="text-gray-600">Lim Shu Yau, Tan Xuan Huan, Tong Zhixian, Chan Rui Qi Stacy, Ang Lin Xuan</p>
+                    </div>
+    
+                    <div class="bg-gradient-to-br from-red-50 to-rose-50 p-6 rounded-lg border hover-animate">
+                        <h4 class="text-lg font-semibold mb-3">Toxicity and Hatefulness Trends in Singapore Social Media <a href="https://github.com/rhyden-kx/DSA4264" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" style="display:inline-block;vertical-align:baseline" width="18" height="18" viewBox="0 0 24 24" fill="black"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/><path/></svg></a></h4>
+                        <p class="text-gray-600">Caleb Lee Heng Yi, Lin Zhengjue Elisa, Denise Teh Kai Xin, Neleh Tok Ying Yun, Sarah Goh Yue En</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-16" style="margin-top:0">
+        <div class="container mx-auto px-6 py-8">
+            <div class="text-center">
+                <p class="text-gray-400">© <a href="http://shaunkhoo.github.io" target="_blank"><u>Shaun Khoo</u></a> (last updated Nov 2024)</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
